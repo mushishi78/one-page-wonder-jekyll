@@ -1,7 +1,7 @@
 title: One Page Wonder - Jekyll
 description: A Jekyll Landing Page Theme
 sitename: Your Website
-baseurl: ''
+baseurl: '/one-page-wonder-jekyll'
 sass:
   sass_dir: /assets/_sass
   style: :compressed
