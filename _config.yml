@@ -1,7 +1,7 @@
 title: "She++"
 description: "Brindar conocimientos para introducir al mundo tecnológico y empoderar a jóvenes mujeres en el mismo ámbito."
 sitename: "She++"
-baseurl: ''
+baseurl: '/'
 sass:
   sass_dir: /assets/_sass
   style: :compressed
