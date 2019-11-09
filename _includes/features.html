@@ -1,13 +1,156 @@
 <main>
-  {% for feature in site.features %}
+  <!-- {% for feature in site.features %}
     <hr id='{{ feature.id }}'>
 
     <section>
-      <img class='{% cycle 'pull-right', 'pull-left' %}' src='{{ feature.image }}'>
+      <img class='{% cycle 'pull-left', 'pull-right' %}' src='{{ feature.image }}'>
       <h2>{{ feature.heading }}<span>{{ feature.subheading }}</span></h2>
       <div class='lead'>{{ feature.content }}</div>
     </section>
-  {% endfor %}
+  {% endfor %} -->
 
+  <br><br><br>
+  <section id="evento">
+    <img class="pull-left" src="https://images.unsplash.com/photo-1531493657527-6d1af0c4c593?auto=format&fit=crop&w=400&h=400">
+    <h2>Conoce <span>She++</span></h2>
+    <div class='lead'>
+      <p>She++ es un evento para mujeres jóvenes y adultas que busquen aprender e introducirse en el mundo del desarrollo tecnológico. Es un evento para compartir y empoderar a mujeres en dicho ámbito.</p>
+      <h3>En este programa buscamos:</h3>
+      <ul>
+        <li>Crear un espacio que fomente la inclusión en el desarrollo de tecnología.</li>
+        <li>Compartir conocimientos sobre tecnologías en diferentes niveles, a través de 3 tracks con distintas tecnologías.</li>
+      </ul>
+    </div>
+  </section>
+  <hr>
+
+  <section id="programa">
+    <h2>Conoce el <span>programa</span></h2>
+    <div class='lead'>
+      <p>El programa consta de tres tracks de formación en distintas tecnologías, separados de acuerdo al nivel de conocimientos. A continuación te presentamos el programa:</p>
+      <br>
+      <style>
+      table, th, td {
+        border: 1px solid #880BDB;
+      }
+      </style>
+      <table bordercolor="#880BDB" style="border: #880BDB;">
+      <tbody>
+      <tr>
+      <td colspan="4">
+      <p style="text-align: center;"><strong>PROGRAMA DEL EVENTO</strong></p>
+      </td>
+      </tr>
+      <tr style="text-align: center;">
+      <td rowspan="2">
+      <p><strong><br /></strong><strong>Hora</strong></p>
+      </td>
+      <td>
+      <p><strong>Track 1 - B&aacute;sico</strong></p>
+      </td>
+      <td>
+      <p><strong>Track 2 - Intermedio</strong></p>
+      </td>
+      <td>
+      <p><strong>Track 3 - Avanzado</strong></p>
+      </td>
+      </tr>
+      <tr style="text-align: center;">
+      <td>
+      <p><strong>GitHub</strong></p>
+      </td>
+      <td>
+      <p><strong>Processing + Python</strong></p>
+      </td>
+      <td>
+      <p><strong>Python Aplicado</strong></p>
+      </td>
+      </tr>
+      <tr style="text-align: center;">
+      <td>
+      <p><span style="font-weight: 400;">10:00</span></p>
+      </td>
+      <td colspan="3">
+      <p><span style="font-weight: 400;">Registro &amp; Check-In</span></p>
+      </td>
+      </tr>
+      <tr style="text-align: center;">
+      <td>
+      <p><span style="font-weight: 400;">10:45</span></p>
+      </td>
+      <td colspan="3">
+      <p><span style="font-weight: 400;">Apertura | Presentaci&oacute;n de 🚀 Future Lab &amp; ⚙️G.E.A.R.</span></p>
+      </td>
+      </tr>
+      <tr style="text-align: center;">
+      <td>
+      <p><span style="font-weight: 400;">11:00</span></p>
+      </td>
+      <td>
+      <p><strong>Introducci&oacute;n al uso de GitHub</strong><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Estefan&iacute;a Saucedo &amp; Cristopher Alan</span></p>
+      </td>
+      <td>
+      <p><strong>Programaci&oacute;n 101 con Processing I</strong><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Rodolfo Ferro &amp; </span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Ricardo Mir&oacute;n</span></p>
+      </td>
+      <td>
+      <p><strong>Ondas gravitacionales y Python</strong><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Atalia Navarro</span></p>
+      </td>
+      </tr>
+      <tr style="text-align: center;">
+      <td>
+      <p><span style="font-weight: 400;">13:00</span></p>
+      </td>
+      <td colspan="3">
+      <p><span style="font-weight: 400;">Networking &amp; Pizza 🍕</span></p>
+      </td>
+      </tr>
+      <tr style="text-align: center;">
+      <td>
+      <p><span style="font-weight: 400;">14:30</span></p>
+      </td>
+      <td>
+      <p><strong>Crea tu primer sitio web con GitHub pages</strong><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Patricia Guti&eacute;rrez</span></p>
+      </td>
+      <td>
+      <p><strong>Programaci&oacute;n 101 con Processing II</strong><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Rodolfo Ferro &amp; </span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Ricardo Mir&oacute;n</span></p>
+      </td>
+      <td>
+      <p><strong>TBD</strong><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Alejandra Astro (TBD)</span></p>
+      </td>
+      </tr>
+      <tr style="text-align: center;">
+      <td>
+      <p><span style="font-weight: 400;">17:30</span></p>
+      </td>
+      <td colspan="3">
+      <p><span style="font-weight: 400;">Din&aacute;mica social</span></p>
+      </td>
+      </tr>
+      <tr>
+      <td style="text-align: center;">
+      <p><span style="font-weight: 400;">18:00</span></p>
+      </td>
+      <td colspan="3">
+      <p style="text-align: center;"><span style="font-weight: 400;">Cierre del evento</span></p>
+      </td>
+      </tr>
+      </tbody>
+      </table>
+    </div>
+  </section>
+  <hr>
+
+  <section id="registro">
+    <img class="pull-right" src="https://images.unsplash.com/photo-1441015401724-70d16b783f5c?auto=format&fit=crop&w=400&h=400">
+    <h2>Pre-registro <span>She++</span></h2>
+    <div class='lead'>
+      <p>She++ es un evento para mujeres jóvenes y adultas que busquen aprender e introducirse en el mundo del desarrollo tecnológico. Es un evento para compartir y empoderar a mujeres en dicho ámbito.</p>
+      <h3>En este programa buscamos:</h3>
+      <ul>
+        <li>Crear un espacio que fomente la inclusión en el desarrollo de tecnología.</li>
+        <li>Compartir conocimientos sobre tecnologías en diferentes niveles, a través de 3 tracks con distintas tecnologías.</li>
+      </ul>
+    </div>
+  </section>
   <hr>
 </main>

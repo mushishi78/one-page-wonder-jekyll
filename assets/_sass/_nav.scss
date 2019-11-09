@@ -1,4 +1,6 @@
 nav {
+	background-color: #382F46;
+	border-color: #382F46;
 	@extend .navbar, .navbar-inverse, .navbar-fixed-top;
 	button { @extend .navbar-toggle; }
 	#menu { @extend .collapse, .navbar-collapse; }
