@@ -2,7 +2,8 @@ header {
   display: block;
   width: 100%;
   text-align: center;
-  background: url('https://images.unsplash.com/photo-1524868857876-218cafbdda8b') no-repeat center center scroll;
+  // background: url('https://images.unsplash.com/photo-1524868857876-218cafbdda8b') no-repeat center center scroll;
+  background: url('img/back.svg') no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -14,14 +15,15 @@ header {
   h1 {
     font-size: 130px;
     color: #fff;
-    font-family: 'Share Tech Mono', monospace;
-    // background: #fff;
-    background: rgba(160, 71, 227, 0.7);
+    font-family: 'Space Mono', monospace;
+    background: rgba(108, 99, 255, 0.7);
+    // background: rgba(119, 123, 155, 0.7);
+    // background: rgba(160, 71, 227, 0.7);
   }
 
   h2 {
     font-size: 44px;
-    color: #fff;
+    color: #3F3D56;
     // background: #fff;
     // background: rgba(255,255,255,0.7);
   }

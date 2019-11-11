@@ -1,4 +1,110 @@
 <main>
+  <style>
+    button {
+      margin-left: 30px;
+      background: #3F3D56;
+    }
+    button > a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    button > a:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .glow-on-hover {
+      width: 220px;
+      height: 50px;
+      border: none;
+      outline: none;
+      color: #fff;
+      background: #bbb;
+      cursor: pointer;
+      position: relative;
+      z-index: 0;
+      border-radius: 10px;
+    }
+
+    .glow-on-hover:before {
+      content: '';
+      background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+      position: absolute;
+      top: -2px;
+      left:-2px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowing 20s linear infinite;
+      opacity: 0;
+      transition: opacity .3s ease-in-out;
+      border-radius: 10px;
+    }
+
+    .glow-on-hover:active {
+      color: #000
+    }
+
+    .glow-on-hover:active:after {
+      background: transparent;
+    }
+
+    .glow-on-hover:hover:before {
+      opacity: 1;
+    }
+
+    .glow-on-hover:after {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #111;
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+    }
+
+    @keyframes glowing {
+      0% { background-position: 0 0; }
+      50% { background-position: 400% 0; }
+      100% { background-position: 0 0; }
+    }
+
+    .thumbnails {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      box-sizing: border-box;
+    }
+    .thumbnails li {
+      float: left;
+      width: 33%;
+      position: relative;
+      padding: 1px;
+      min-height: 100px;
+      background-color: #fff;
+      border: 1px solid transparent;
+      overflow: hidden;
+    }
+    .thumbnails li img {
+      max-width: 100%;
+      display: block;
+      position: absolute;
+      max-height: 100px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      left: 50%;
+    }
+
+    .inverted {
+    	filter: invert(90%);
+    }
+  </style>
   <!-- {% for feature in site.features %}
     <hr id='{{ feature.id }}'>
 
@@ -9,22 +115,27 @@
     </section>
   {% endfor %} -->
 
-  <br><br><br>
-  <section id="evento">
-    <img class="pull-left" src="https://images.unsplash.com/photo-1531493657527-6d1af0c4c593?auto=format&fit=crop&w=400&h=400">
+  <hr id="evento">
+
+  <section>
+    <!-- <img class="pull-right" src="https://images.unsplash.com/photo-1531493657527-6d1af0c4c593?auto=format&fit=crop&w=450&h=450"> -->
+    <img class="pull-right" src="assets/img/blogging.svg" width="550">
     <h2>Conoce <span>She++</span></h2>
     <div class='lead'>
-      <p>She++ es un evento para mujeres jóvenes y adultas que busquen aprender e introducirse en el mundo del desarrollo tecnológico. Es un evento para compartir y empoderar a mujeres en dicho ámbito.</p>
+      <p>She++ es un evento para mujeres jóvenes que buscan aprender e introducirse en el mundo del desarrollo tecnológico. Es un evento para compartir y empoderar a mujeres en dicho ámbito.</p>
       <h3>En este programa buscamos:</h3>
       <ul>
         <li>Crear un espacio que fomente la inclusión en el desarrollo de tecnología.</li>
         <li>Compartir conocimientos sobre tecnologías en diferentes niveles, a través de 3 tracks con distintas tecnologías.</li>
       </ul>
+
+      <p>Para esta edición nos enfocaremos en el uso de GitHub y Python, esto irá variando en cada edición.</p>
     </div>
   </section>
-  <hr>
 
-  <section id="programa">
+  <hr id="programa">
+
+  <section>
     <h2>Conoce el <span>programa</span></h2>
     <div class='lead'>
       <p>El programa consta de tres tracks de formación en distintas tecnologías, separados de acuerdo al nivel de conocimientos. A continuación te presentamos el programa:</p>
@@ -138,19 +249,50 @@
       </table>
     </div>
   </section>
-  <hr>
 
-  <section id="registro">
-    <img class="pull-right" src="https://images.unsplash.com/photo-1441015401724-70d16b783f5c?auto=format&fit=crop&w=400&h=400">
+  <hr id="registro">
+
+  <section>
+    <!-- <img class="pull-right" src="https://images.unsplash.com/photo-1441015401724-70d16b783f5c?auto=format&fit=crop&w=450&h=450"> -->
+    <img class="pull-right" src="assets/img/cloud.svg" width="450">
     <h2>Pre-registro <span>She++</span></h2>
     <div class='lead'>
-      <p>She++ es un evento para mujeres jóvenes y adultas que busquen aprender e introducirse en el mundo del desarrollo tecnológico. Es un evento para compartir y empoderar a mujeres en dicho ámbito.</p>
-      <h3>En este programa buscamos:</h3>
+      <p>Si tienes entre 16 y 29 años y te gustaría participar en el programa de <strong>She++</strong>, llena el siguiente formulario de pre-registro.</p>
+
+      <h3>Requerimientos</h3>
+      <p>En caso de que seas aceptada para participar en este programa de talleres durante todo el día, sólo será necesario:</p>
       <ul>
-        <li>Crear un espacio que fomente la inclusión en el desarrollo de tecnología.</li>
-        <li>Compartir conocimientos sobre tecnologías en diferentes niveles, a través de 3 tracks con distintas tecnologías.</li>
+        <li>Traer tu equipo de cómputo (una laptop).</li>
+        <li>¡Y nada más! Nosotros nos encargaremos de poner todo lo demás, incluida tu comida de ese día.</li>
+      </ul>
+
+      <p>Una vez hayas llenado el formulario, mantente pendiente de tu email para la aceptación en el programa.</p>
+
+      <h3>¡Sólo tenemos 30 lugares!</h3>
+      <br>
+      <button class="glow-on-hover" type="button">
+        <a href="https://forms.gle/SrfqwV9R8bnzv4Yd6" target="_blank">PRE-REGISTRO</a>
+      </button>
+    </div>
+  </section>
+
+  <hr id="aliadxs">
+
+  <section>
+    <h2>Aliadxs <span>She++</span></h2>
+    <div class='lead'>
+      <h3>¡Gracias por hacer que <strong>She++</strong> sea posible!</h3>
+      <br>
+      <ul class="thumbnails">
+        <li><img src="assets/img/gear.png" width="180"></li>
+        <li><img src="assets/img/futurelab.png" width="150"></li>
+        <li><img src="assets/img/zonaei.png" class="inverted" width="100"></li>
+        <li><img src="assets/img/pt100.png" class="inverted" width="100"></li>
+        <li><img src="assets/img/ieegl.png" class="inverted" width="200"></li>
       </ul>
     </div>
   </section>
+
   <hr>
+
 </main>

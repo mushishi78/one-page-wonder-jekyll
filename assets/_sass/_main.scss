@@ -1,9 +1,11 @@
 main {
+  color: #3F3D56;
+  
   hr { margin: 80px 0; }
   section { overflow: hidden; }
 
   img {
-    @extend .img-circle;
+    // @extend .img-circle;
     @extend .img-responsive;
 
     &.pull-left {  margin-right: 40px;  }
